@@ -1,0 +1,8 @@
+/home/eduardo/Documentos/UEL/3ano/SO/rmi-grayscale/src/GrayscaleServer.java:4: warning: Compound GrayscaleServer is not documented.
+/home/eduardo/Documentos/UEL/3ano/SO/rmi-grayscale/src/GrayscaleClient.java:11: warning: Compound GrayscaleClient is not documented.
+/home/eduardo/Documentos/UEL/3ano/SO/rmi-grayscale/src/GrayscaleInterface.java:4: warning: Compound GrayscaleInterface is not documented.
+/home/eduardo/Documentos/UEL/3ano/SO/rmi-grayscale/src/GrayscaleClient.java:167: warning: Member joinImages(LinkedList< int[]> splitImagesBytes, int width, int height, int type, int splitSize) (function) of class GrayscaleClient is not documented.
+/home/eduardo/Documentos/UEL/3ano/SO/rmi-grayscale/src/GrayscaleClient.java:189: warning: Member convertImage(GrayscaleInterface grayscale, LinkedList< int[]> splitImagesBytes, int index) (function) of class GrayscaleClient is not documented.
+/home/eduardo/Documentos/UEL/3ano/SO/rmi-grayscale/src/GrayscaleInterface.java:5: warning: Member convert(int[] image) (function) of class GrayscaleInterface is not documented.
+/home/eduardo/Documentos/UEL/3ano/SO/rmi-grayscale/src/GrayscaleServer.java:17: warning: Member convert(int[] image) (function) of class GrayscaleServer is not documented.
+/home/eduardo/Documentos/UEL/3ano/SO/rmi-grayscale/src/GrayscaleServer.java:42: warning: Member main(String[] args) (function) of class GrayscaleServer is not documented.

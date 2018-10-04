@@ -1,0 +1,54 @@
+\hypertarget{classGrayscaleClient}{}\section{Grayscale\+Client Class Reference}
+\label{classGrayscaleClient}\index{Grayscale\+Client@{Grayscale\+Client}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classGrayscaleClient_a560bbf8aa076b373ce660ef446750170}{main} (String\mbox{[}$\,$\mbox{]} args)  throws I\+O\+Exception 
+\item 
+static Linked\+List$<$ int\mbox{[}$\,$\mbox{]}$>$ \hyperlink{classGrayscaleClient_a6d22c0e1ee10ec06dabbd248bf8b10eb}{split\+Image} (Buffered\+Image image, int split\+Size)  throws I\+O\+Exception 
+\item 
+static Buffered\+Image {\bfseries join\+Images} (Linked\+List$<$ int\mbox{[}$\,$\mbox{]}$>$ split\+Images\+Bytes, int width, int height, int type, int split\+Size)\hypertarget{classGrayscaleClient_ade172cb7aff4bb2b38d1eefa5a54d3e1}{}\label{classGrayscaleClient_ade172cb7aff4bb2b38d1eefa5a54d3e1}
+
+\item 
+static Thread {\bfseries convert\+Image} (\hyperlink{interfaceGrayscaleInterface}{Grayscale\+Interface} grayscale, Linked\+List$<$ int\mbox{[}$\,$\mbox{]}$>$ split\+Images\+Bytes, int index)\hypertarget{classGrayscaleClient_a4884430c9fa4d2d2bbaa35e6887ddb7d}{}\label{classGrayscaleClient_a4884430c9fa4d2d2bbaa35e6887ddb7d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Grayscale\+Client@{Grayscale\+Client}!main@{main}}
+\index{main@{main}!Grayscale\+Client@{Grayscale\+Client}}
+\subsubsection[{\texorpdfstring{main(\+String[] args)}{main(String[] args)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Grayscale\+Client.\+main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classGrayscaleClient_a560bbf8aa076b373ce660ef446750170}{}\label{classGrayscaleClient_a560bbf8aa076b373ce660ef446750170}
+Lendo os n servidores.
+
+Lendo imagem através do diretório recebido.
+
+Pegando tipo, width e height da imagem.
+
+Separando a imagem em n partes iguais, de acordo com o número de servidores a serem utilizados.
+
+Inicializando as interfaces.
+
+Convertendo partes da imagem em diferentes threads.
+
+Esperando que todas as thread terminem de executar antes de continuar com a main.
+
+Juntando todas as partes da imagem convertida.
+
+Calculando o tempo gasto para a conversão.\index{Grayscale\+Client@{Grayscale\+Client}!split\+Image@{split\+Image}}
+\index{split\+Image@{split\+Image}!Grayscale\+Client@{Grayscale\+Client}}
+\subsubsection[{\texorpdfstring{split\+Image(\+Buffered\+Image image, int split\+Size)}{splitImage(BufferedImage image, int splitSize)}}]{\setlength{\rightskip}{0pt plus 5cm}static Linked\+List$<$int\mbox{[}$\,$\mbox{]}$>$ Grayscale\+Client.\+split\+Image (
+\begin{DoxyParamCaption}
+\item[{Buffered\+Image}]{image, }
+\item[{int}]{split\+Size}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classGrayscaleClient_a6d22c0e1ee10ec06dabbd248bf8b10eb}{}\label{classGrayscaleClient_a6d22c0e1ee10ec06dabbd248bf8b10eb}
+pegando width e height da imagem
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Grayscale\+Client.\+java\end{DoxyCompactItemize}
