@@ -158,7 +158,7 @@ public class GrayscaleClient {
 			splitImagesBytes.add(index, imageByte);
 			index++;
 			
-			ImageIO.write(img, "jpg", new File("/home/renan/corinthians-" + index + ".jpg"));
+			// ImageIO.write(img, "jpg", new File("/home/renan/corinthians-" + index + ".jpg"));
 		}
 		
 		return splitImagesBytes;		
