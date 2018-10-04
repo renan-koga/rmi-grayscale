@@ -1,0 +1,38 @@
+#####################################################################################################
+################################## Passos de Compilação e Execução ##################################
+#####################################################################################################
+
+
+Cliente:
+  1 - Compilar todos os arquivos .java, para isso execute o seguinte comando:
+    $ javac *.java
+
+  2 - Após a compilação, é preciso gerar o skeleton, então execute o seguinte comando:
+    $ rmic GrayscaleServer
+
+
+Servidor:
+  3 - Criar pasta(s) referente(s) ao(s) servidor(es).
+    $ mkdir <nome-da-pasta>
+  
+  4 - Copiar os arquivos .class gerados na compilação na(s) pasta(s) do(s) servidor(es).
+    $ cp <caminho-dos-arquivos-class>/.*class <caminho-da-pasta-do-servidor>
+
+    Ex: cp /home/user/rmi-project/src/.*class /home/user/rmi-server-1/
+
+  5 - Verificar se o arquivo java.police está no diretório do(s) servidor(es).
+
+  6 - Iniciar o serviço do servidor executando o seguinte comando:
+    $ rmiregistry &
+
+  7 - Executar o(s) Servidor(es) com o seguinte comando:
+    $ java -Djava.rmi.server.codebase=http://<IP>/<pasta contendo os arquivos .class do servidor> -Djava.security.policy=java.policy <ArquivoServidorImplementado> rmi://<IP>/<pasta contendo os arquivos .class do servidor>/<nome do método> &
+
+    Ex: java -Djava.rmi.server.codebase=http://localhost/home/user/rmi-servidor-1/ -Djava.security.policy=java.policy GrayscaleServer rmi://localhost/home/user/rmi-servidor-1/grayscale &
+
+
+Cliente:
+  8 - Executar o Cliente:
+    $ java -Djava.security.policy=java.policy <ArquivoCliente> rmi://<IP>/<pasta contendo os arquivos .class do servidor>/<nome do método criado na execução do servidor>
+
+    Ex: java -Djava.security.policy=java.policy GrayscaleClient rmi://localhost/home/user/rmi-servidor-1/grayscale
